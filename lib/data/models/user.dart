@@ -1,12 +1,14 @@
-import 'package:equatable/equatable.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class User extends Equatable {
-  const User(this.id);
+part 'user.freezed.dart';
+part 'user.g.dart';
 
-  final String id;
+@freezed
+class User with _$User {
+  const factory User({required String id}) = _User;
 
-  @override
-  List<Object> get props => [id];
+  factory User.fromJson(Map<String, Object?> json) => _$UserFromJson(json);
 
-  static const empty = User('-');
+  // Static constant for empty user
+  static const empty = User(id: '-');
 }
