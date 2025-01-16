@@ -68,3 +68,7 @@ web/.build/
 # Freezed generated files
 *.g.dart
 *.freezed.dart
+
+# Mason generated files
+.mason/
+mason-lock.json
