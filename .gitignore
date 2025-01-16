@@ -9,6 +9,7 @@
 .history
 .svn/
 *.lock
+.vscode
 migrate_working_dir/
 *.dart_tool/
 
@@ -63,3 +64,7 @@ macos/Flutter/Generated.xcconfig
 # Web related
 web/.dart_tool/
 web/.build/
+
+# Freezed generated files
+*.g.dart
+*.freezed.dart
